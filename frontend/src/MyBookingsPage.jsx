@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { bookingService } from './bookingService';
 import { useNotification } from './NotificationContext';
-import { DigitalTicketCard } from './components/common/DigitalTicketCard';
-import { TableSkeleton } from './components/common/LoadingSkeleton';
+import { DigitalTicketCard } from './DigitalTicketCard';
+import { TableSkeleton } from './LoadingSkeleton';
 import {
   Ticket,
   Calendar,

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext';
 import { useTheme } from './ThemeContext';
-import { ToastContainer } from './components/common/ToastContainer';
+import { ToastContainer } from './ToastContainer';
 import {
   Sparkles,
   LayoutDashboard,

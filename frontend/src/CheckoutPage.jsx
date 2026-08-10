@@ -4,8 +4,8 @@ import confetti from 'canvas-confetti';
 import { bookingService, paymentService } from './bookingService';
 import { useAuth } from './AuthContext';
 import { useNotification } from './NotificationContext';
-import { PaymentModal } from './components/common/PaymentModal';
-import { DigitalTicketCard } from './components/common/DigitalTicketCard';
+import { PaymentModal } from './PaymentModal';
+import { DigitalTicketCard } from './DigitalTicketCard';
 import {
   Calendar,
   Clock,

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { adminService } from './bookingService';
 import { useNotification } from './NotificationContext';
-import { TableSkeleton } from './components/common/LoadingSkeleton';
+import { TableSkeleton } from './LoadingSkeleton';
 import {
   CheckSquare,
   CheckCircle2,

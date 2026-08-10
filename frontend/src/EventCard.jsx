@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Calendar, MapPin, Star, Heart, ArrowRight, Clock, Users, Sparkles } from 'lucide-react';
-import { eventService } from '../../eventService';
-import { useAuth } from '../../AuthContext';
-import { useNotification } from '../../NotificationContext';
+import { eventService } from './eventService';
+import { useAuth } from './AuthContext';
+import { useNotification } from './NotificationContext';
 
 export const EventCard = ({ event, onWishlistChange }) => {
   const { isAuthenticated } = useAuth();

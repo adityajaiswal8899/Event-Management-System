@@ -4,7 +4,7 @@ import { eventService } from './eventService';
 import { reviewService } from './bookingService';
 import { useAuth } from './AuthContext';
 import { useNotification } from './NotificationContext';
-import { EventCard } from './components/common/EventCard';
+import { EventCard } from './EventCard';
 import {
   Calendar,
   Clock,

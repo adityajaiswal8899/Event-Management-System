@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { adminService } from './bookingService';
 import { useNotification } from './NotificationContext';
-import { TableSkeleton } from './components/common/LoadingSkeleton';
+import { TableSkeleton } from './LoadingSkeleton';
 import { Users, Search, Shield, UserCheck, CheckCircle2, XCircle } from 'lucide-react';
 
 export const AdminUsersPage = () => {

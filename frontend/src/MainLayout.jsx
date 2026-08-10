@@ -1,8 +1,8 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Navbar } from './components/common/Navbar';
-import { Footer } from './components/common/Footer';
-import { ToastContainer } from './components/common/ToastContainer';
+import { Navbar } from './Navbar';
+import { Footer } from './Footer';
+import { ToastContainer } from './ToastContainer';
 
 export const MainLayout = () => {
   return (
