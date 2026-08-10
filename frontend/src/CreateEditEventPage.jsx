@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { eventService } from '../../eventService';
-import { useNotification } from '../../context/NotificationContext';
+import { eventService } from './eventService';
+import { useNotification } from './NotificationContext';
 import {
   Calendar,
   Clock,

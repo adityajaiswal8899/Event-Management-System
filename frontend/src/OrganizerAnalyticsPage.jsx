@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { eventService } from '../../eventService';
-import { TableSkeleton } from '../../components/common/LoadingSkeleton';
+import { eventService } from './eventService';
+import { TableSkeleton } from './components/common/LoadingSkeleton';
 import { BarChart3, TrendingUp, DollarSign, Ticket, Users, Award } from 'lucide-react';
 
 export const OrganizerAnalyticsPage = () => {

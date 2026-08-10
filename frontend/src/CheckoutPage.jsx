@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import confetti from 'canvas-confetti';
-import { bookingService, paymentService } from '../bookingService';
-import { useAuth } from '../context/AuthContext';
-import { useNotification } from '../context/NotificationContext';
-import { PaymentModal } from '../components/common/PaymentModal';
-import { DigitalTicketCard } from '../components/common/DigitalTicketCard';
+import { bookingService, paymentService } from './bookingService';
+import { useAuth } from './AuthContext';
+import { useNotification } from './NotificationContext';
+import { PaymentModal } from './components/common/PaymentModal';
+import { DigitalTicketCard } from './components/common/DigitalTicketCard';
 import {
   Calendar,
   Clock,

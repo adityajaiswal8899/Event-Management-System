@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { authService } from '../authService';
-import { useNotification } from '../context/NotificationContext';
+import { authService } from './authService';
+import { useNotification } from './NotificationContext';
 import { Sparkles, Mail, Lock, KeyRound, ArrowLeft } from 'lucide-react';
 
 export const ForgotPasswordPage = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNotification } from '../../context/NotificationContext';
+import { useNotification } from '../../NotificationContext';
 import { CheckCircle2, AlertTriangle, AlertCircle, Info, X } from 'lucide-react';
 
 export const ToastContainer = () => {

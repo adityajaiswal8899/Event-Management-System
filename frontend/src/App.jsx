@@ -1,43 +1,43 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext';
-import { AuthProvider, useAuth } from './context/AuthContext';
-import { NotificationProvider } from './context/NotificationContext';
+import { ThemeProvider } from './ThemeContext';
+import { AuthProvider, useAuth } from './AuthContext';
+import { NotificationProvider } from './NotificationContext';
 
 // Layouts
-import { MainLayout } from './layouts/MainLayout';
-import { DashboardLayout } from './layouts/DashboardLayout';
+import { MainLayout } from './MainLayout';
+import { DashboardLayout } from './DashboardLayout';
 
 // Public Pages
-import { HomePage } from './pages/HomePage';
-import { EventsPage } from './pages/EventsPage';
-import { EventDetailPage } from './pages/EventDetailPage';
-import { TicketVerificationPage } from './pages/TicketVerificationPage';
-import { AboutPage, ContactPage } from './pages/AboutPage';
-import { LoginPage } from './pages/LoginPage';
-import { RegisterPage } from './pages/RegisterPage';
-import { ForgotPasswordPage } from './pages/ForgotPasswordPage';
+import { HomePage } from './HomePage';
+import { EventsPage } from './EventsPage';
+import { EventDetailPage } from './EventDetailPage';
+import { TicketVerificationPage } from './TicketVerificationPage';
+import { AboutPage, ContactPage } from './AboutPage';
+import { LoginPage } from './LoginPage';
+import { RegisterPage } from './RegisterPage';
+import { ForgotPasswordPage } from './ForgotPasswordPage';
 
 // Authenticated User Pages
-import { CheckoutPage } from './pages/CheckoutPage';
-import { MyBookingsPage } from './pages/MyBookingsPage';
-import { WishlistPage } from './pages/WishlistPage';
-import { UserProfilePage } from './pages/UserProfilePage';
+import { CheckoutPage } from './CheckoutPage';
+import { MyBookingsPage } from './MyBookingsPage';
+import { WishlistPage } from './WishlistPage';
+import { UserProfilePage } from './UserProfilePage';
 
 // Organizer Pages
-import { OrganizerDashboardPage } from './pages/organizer/OrganizerDashboardPage';
-import { OrganizerEventsPage } from './pages/organizer/OrganizerEventsPage';
-import { CreateEditEventPage } from './pages/organizer/CreateEditEventPage';
-import { OrganizerBookingsPage } from './pages/organizer/OrganizerBookingsPage';
-import { OrganizerAnalyticsPage } from './pages/organizer/OrganizerAnalyticsPage';
+import { OrganizerDashboardPage } from './OrganizerDashboardPage';
+import { OrganizerEventsPage } from './OrganizerEventsPage';
+import { CreateEditEventPage } from './CreateEditEventPage';
+import { OrganizerBookingsPage } from './OrganizerBookingsPage';
+import { OrganizerAnalyticsPage } from './OrganizerAnalyticsPage';
 
 // Admin Pages
-import { AdminDashboardPage } from './pages/admin/AdminDashboardPage';
-import { AdminEventsPage } from './pages/admin/AdminEventsPage';
-import { AdminUsersPage } from './pages/admin/AdminUsersPage';
-import { AdminBookingsPage } from './pages/admin/AdminBookingsPage';
-import { AdminPaymentsPage } from './pages/admin/AdminPaymentsPage';
-import { AdminCouponsPage } from './pages/admin/AdminCouponsPage';
+import { AdminDashboardPage } from './AdminDashboardPage';
+import { AdminEventsPage } from './AdminEventsPage';
+import { AdminUsersPage } from './AdminUsersPage';
+import { AdminBookingsPage } from './AdminBookingsPage';
+import { AdminPaymentsPage } from './AdminPaymentsPage';
+import { AdminCouponsPage } from './AdminCouponsPage';
 
 // Route Guards
 const ProtectedRoute = ({ children }) => {

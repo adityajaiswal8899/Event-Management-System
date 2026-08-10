@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { eventService } from '../eventService';
-import { authService } from '../authService';
-import { EventCard } from '../components/common/EventCard';
-import { EventCardSkeleton } from '../components/common/LoadingSkeleton';
+import { eventService } from './eventService';
+import { authService } from './authService';
+import { EventCard } from './components/common/EventCard';
+import { EventCardSkeleton } from './components/common/LoadingSkeleton';
 import {
   Sparkles,
   Search,

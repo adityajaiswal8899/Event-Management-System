@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { ticketService } from '../bookingService';
-import { useAuth } from '../context/AuthContext';
-import { useNotification } from '../context/NotificationContext';
+import { ticketService } from './bookingService';
+import { useAuth } from './AuthContext';
+import { useNotification } from './NotificationContext';
 import {
   QrCode,
   ShieldCheck,

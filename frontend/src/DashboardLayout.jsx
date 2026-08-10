@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
-import { useTheme } from '../context/ThemeContext';
-import { ToastContainer } from '../components/common/ToastContainer';
+import { useAuth } from './AuthContext';
+import { useTheme } from './ThemeContext';
+import { ToastContainer } from './components/common/ToastContainer';
 import {
   Sparkles,
   LayoutDashboard,
