@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { eventService } from '../services/eventService';
-import { reviewService } from '../services/bookingService';
+import { eventService } from '../eventService';
+import { reviewService } from '../bookingService';
 import { useAuth } from '../context/AuthContext';
 import { useNotification } from '../context/NotificationContext';
 import { EventCard } from '../components/common/EventCard';

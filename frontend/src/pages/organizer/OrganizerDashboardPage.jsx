@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { eventService } from '../../services/eventService';
+import { eventService } from '../../eventService';
 import { TableSkeleton } from '../../components/common/LoadingSkeleton';
 import {
   DollarSign,

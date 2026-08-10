@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { bookingService } from '../services/bookingService';
+import { bookingService } from '../bookingService';
 import { useNotification } from '../context/NotificationContext';
 import { DigitalTicketCard } from '../components/common/DigitalTicketCard';
 import { TableSkeleton } from '../components/common/LoadingSkeleton';

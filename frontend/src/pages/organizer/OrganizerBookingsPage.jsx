@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { bookingService } from '../../services/bookingService';
+import { bookingService } from '../../bookingService';
 import { TableSkeleton } from '../../components/common/LoadingSkeleton';
 import { Ticket, Users, Search, Download, CheckCircle2, Clock, Calendar } from 'lucide-react';
 

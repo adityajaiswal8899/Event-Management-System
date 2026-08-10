@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import { notificationService } from '../services/bookingService';
+import { notificationService } from '../bookingService';
 import { useAuth } from './AuthContext';
 
 const NotificationContext = createContext();

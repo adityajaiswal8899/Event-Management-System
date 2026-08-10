@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { adminService } from '../../services/bookingService';
+import { adminService } from '../../bookingService';
 import { TableSkeleton } from '../../components/common/LoadingSkeleton';
 import {
   ShieldCheck,

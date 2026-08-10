@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { eventService } from '../services/eventService';
+import { eventService } from '../eventService';
 import { EventCard } from '../components/common/EventCard';
 import { EventCardSkeleton } from '../components/common/LoadingSkeleton';
 import {

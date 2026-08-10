@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { authService } from '../services/authService';
+import { authService } from '../authService';
 import { useNotification } from '../context/NotificationContext';
 import { Sparkles, Mail, Lock, KeyRound, ArrowLeft } from 'lucide-react';
 

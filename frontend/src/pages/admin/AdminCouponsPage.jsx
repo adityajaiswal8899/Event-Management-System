@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { adminService } from '../../services/bookingService';
+import { adminService } from '../../bookingService';
 import { useNotification } from '../../context/NotificationContext';
 import { TableSkeleton } from '../../components/common/LoadingSkeleton';
 import { Tag, Plus, Trash2, Edit, X } from 'lucide-react';

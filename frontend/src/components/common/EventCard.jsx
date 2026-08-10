@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Calendar, MapPin, Star, Heart, ArrowRight, Clock, Users, Sparkles } from 'lucide-react';
-import { eventService } from '../../services/eventService';
+import { eventService } from '../../eventService';
 import { useAuth } from '../../context/AuthContext';
 import { useNotification } from '../../context/NotificationContext';
 

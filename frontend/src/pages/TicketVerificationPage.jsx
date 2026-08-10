@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ticketService } from '../services/bookingService';
+import { ticketService } from '../bookingService';
 import { useAuth } from '../context/AuthContext';
 import { useNotification } from '../context/NotificationContext';
 import {

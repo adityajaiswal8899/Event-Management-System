@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { eventService } from '../services/eventService';
-import { authService } from '../services/authService';
+import { eventService } from '../eventService';
+import { authService } from '../authService';
 import { EventCard } from '../components/common/EventCard';
 import { EventCardSkeleton } from '../components/common/LoadingSkeleton';
 import {

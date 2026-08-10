@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { adminService } from '../../services/bookingService';
+import { adminService } from '../../bookingService';
 import { TableSkeleton } from '../../components/common/LoadingSkeleton';
 import { CreditCard, Search, ShieldCheck } from 'lucide-react';
 

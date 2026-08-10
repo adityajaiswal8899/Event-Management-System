@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNotification } from '../context/NotificationContext';
-import { authService } from '../services/authService';
+import { authService } from '../authService';
 import { User, Mail, Phone, Lock, Building, Globe, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const UserProfilePage = () => {
