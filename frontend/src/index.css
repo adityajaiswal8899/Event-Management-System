@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-primary-500 selection:text-white transition-colors duration-200 font-sans;
+  }
+  .dark body,
+  body.dark {
+    @apply bg-dark-600 text-slate-100;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-dark-500;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-dark-300 rounded-full hover:bg-slate-400 dark:hover:bg-dark-200;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  @apply bg-white/80 dark:bg-dark-500/80 backdrop-blur-md border border-slate-200/80 dark:border-dark-300/50 shadow-glass dark:shadow-glass-dark;
+}
+
+.glass-card {
+  @apply bg-white/90 dark:bg-dark-400/90 backdrop-blur-sm border border-slate-200/70 dark:border-dark-300/40 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200;
+}
+
+.glass-nav {
+  @apply bg-white/85 dark:bg-dark-600/85 backdrop-blur-lg border-b border-slate-200/80 dark:border-dark-400/80;
+}
+
+/* Gradient texts */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-indigo-600 to-accent-600 dark:from-primary-400 dark:via-indigo-300 dark:to-accent-400;
+}
+
+.text-gradient-accent {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 to-primary-500;
+}
+
+/* Ticket Cutout Effect */
+.ticket-edge-left {
+  position: relative;
+}
+.ticket-edge-left::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  @apply bg-slate-100 dark:bg-dark-600;
+}
+
+.ticket-edge-right {
+  position: relative;
+}
+.ticket-edge-right::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  @apply bg-slate-100 dark:bg-dark-600;
+}

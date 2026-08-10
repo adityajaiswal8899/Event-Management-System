@@ -1,0 +1,16 @@
+{
+  "include": [
+    "backend"
+  ],
+  "extraPaths": [
+    "./backend",
+    "./backend/apps"
+  ],
+  "reportMissingImports": false,
+  "reportMissingModuleSource": false,
+  "reportMissingTypeStubs": false,
+  "reportGeneralTypeIssues": false,
+  "reportAttributeAccessIssue": false,
+  "reportOptionalMemberAccess": false
+}
+
