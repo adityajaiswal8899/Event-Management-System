@@ -364,7 +364,7 @@ export const HomePage = () => {
             Effortless Experience
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl">
-            How EventSphere Works
+            How AJ Events Works
           </h2>
           <p className="text-sm text-slate-400">
             From discovering your next inspiration to effortless gate check-in in under 30 seconds.

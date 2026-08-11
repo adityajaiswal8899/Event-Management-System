@@ -18,8 +18,9 @@ export const NotificationProvider = ({ children }) => {
     }
     try {
       const data = await notificationService.getNotifications();
-      setNotifications(data);
-      const unread = data.filter(n => !n.is_read).length;
+      const list = Array.isArray(data) ? data : (data?.results || []);
+      setNotifications(list);
+      const unread = list.filter(n => !n.is_read).length;
       setUnreadCount(unread);
     } catch (err) {
       console.error('Failed to fetch notifications:', err);
