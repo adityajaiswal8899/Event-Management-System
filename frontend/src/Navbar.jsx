@@ -93,15 +93,15 @@ export const Navbar = () => {
         
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-600 to-accent-500 flex items-center justify-center text-white shadow-glow group-hover:scale-105 transition-transform duration-200">
-            <Sparkles className="w-6 h-6 animate-pulse-slow" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-600 via-indigo-600 to-accent-500 flex items-center justify-center text-white shadow-glow group-hover:scale-105 transition-transform duration-200">
+            <span className="font-display font-black text-lg tracking-wider text-white select-none">AJ</span>
           </div>
           <div className="flex flex-col">
             <span className="font-display font-extrabold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-primary-700 to-accent-600 dark:from-white dark:via-primary-300 dark:to-accent-400">
-              EventSphere
+              AJ Events
             </span>
-            <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase -mt-1">
-              Smart Events
+            <span className="text-[10px] font-semibold text-primary-600 dark:text-primary-400 tracking-wider uppercase -mt-1">
+              by Aditya
             </span>
           </div>
         </Link>

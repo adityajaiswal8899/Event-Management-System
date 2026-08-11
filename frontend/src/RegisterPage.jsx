@@ -74,11 +74,11 @@ export const RegisterPage = () => {
         
         <div className="text-center space-y-2">
           <Link to="/" className="inline-flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary-600 to-accent-500 flex items-center justify-center text-white shadow-glow">
-              <Sparkles className="w-6 h-6" />
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary-600 via-indigo-600 to-accent-500 flex items-center justify-center text-white shadow-glow">
+              <span className="font-display font-black text-lg tracking-wider text-white select-none">AJ</span>
             </div>
             <span className="font-display font-extrabold text-2xl tracking-tight text-slate-900 dark:text-white">
-              EventSphere
+              AJ Events
             </span>
           </Link>
           <h2 className="font-display font-extrabold text-2xl text-slate-900 dark:text-white">

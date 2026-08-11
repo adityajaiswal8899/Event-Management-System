@@ -36,7 +36,7 @@ export const DigitalTicketCard = ({ ticket }) => {
           <div className="flex items-center justify-between gap-2 mb-2">
             <div className="flex items-center gap-2">
               <TicketIcon className="w-5 h-5" />
-              <span className="font-display font-bold text-sm tracking-wider uppercase">EventSphere Pass</span>
+              <span className="font-display font-bold text-sm tracking-wider uppercase">AJ Events Pass</span>
             </div>
             <span className={`px-3 py-1 rounded-full text-xs font-bold ${
               ticket.is_checked_in

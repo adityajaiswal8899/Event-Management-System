@@ -98,9 +98,10 @@ export const HomePage = () => {
         <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
           
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-semibold text-primary-700 dark:text-primary-300 shadow-sm">
-            <Sparkles className="w-4 h-4 text-accent-500 animate-spin" style={{ animationDuration: '6s' }} />
-            <span>Discover Top Summits, Festivals & Masterclasses</span>
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full glass-panel text-xs font-semibold text-primary-700 dark:text-primary-300 shadow-sm border border-primary-200/50 dark:border-primary-800/40">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 font-bold">
+              Powered by Aditya
+            </span>
           </div>
 
           {/* Main Headline */}

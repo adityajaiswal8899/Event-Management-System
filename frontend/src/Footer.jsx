@@ -11,11 +11,11 @@ export const Footer = () => {
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-500 to-accent-500 flex items-center justify-center text-white shadow-glow">
-                <Sparkles className="w-6 h-6" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-500 via-indigo-600 to-accent-500 flex items-center justify-center text-white shadow-glow group-hover:scale-105 transition-transform duration-200">
+                <span className="font-display font-black text-lg tracking-wider text-white select-none">AJ</span>
               </div>
               <span className="font-display font-extrabold text-2xl tracking-tight text-white">
-                EventSphere
+                AJ Events
               </span>
             </Link>
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
@@ -69,7 +69,7 @@ export const Footer = () => {
             <p className="text-xs text-slate-400">
               Get notified of exclusive early-bird discounts and premier event drops.
             </p>
-            <form onSubmit={(e) => { e.preventDefault(); alert('Subscribed to EventSphere newsletter!'); }} className="space-y-2">
+            <form onSubmit={(e) => { e.preventDefault(); alert('Subscribed to AJ Events newsletter!'); }} className="space-y-2">
               <input
                 type="email"
                 required
@@ -90,7 +90,7 @@ export const Footer = () => {
         {/* Bottom copyright */}
         <div className="pt-10 mt-10 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div>
-            © {new Date().getFullYear()} EventSphere Inc. All rights reserved. Built for seamless live experiences.
+            © {new Date().getFullYear()} AJ Events Inc. All rights reserved. Built for seamless live experiences.
           </div>
           <div className="flex items-center gap-4">
             <Link to="/about" className="hover:text-slate-400 transition-colors">About Us</Link>

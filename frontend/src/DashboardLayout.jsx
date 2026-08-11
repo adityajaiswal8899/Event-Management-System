@@ -72,12 +72,12 @@ export const DashboardLayout = ({ role = 'organizer' }) => {
           {/* Brand Header */}
           <div className="p-5 flex items-center justify-between border-b border-slate-100 dark:border-dark-400">
             <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-600 to-accent-500 flex items-center justify-center text-white shadow-glow">
-                <Sparkles className="w-5 h-5" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-600 via-indigo-600 to-accent-500 flex items-center justify-center text-white shadow-glow">
+                <span className="font-display font-black text-base tracking-wider text-white select-none">AJ</span>
               </div>
               <div>
                 <span className="font-display font-bold text-base bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-primary-600 dark:from-white dark:to-primary-300">
-                  EventSphere
+                  AJ Events
                 </span>
                 <span className="block text-[10px] uppercase tracking-wider font-semibold text-primary-600 dark:text-primary-400">
                   {role === 'admin' ? 'Admin Portal' : 'Organizer Hub'}

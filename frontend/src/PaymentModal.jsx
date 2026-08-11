@@ -40,7 +40,7 @@ export const PaymentModal = ({ isOpen, onClose, orderData, onPaymentSuccess }) =
               ₹
             </div>
             <div>
-              <div className="text-xs text-slate-400 font-medium">EventSphere Checkout</div>
+              <div className="text-xs text-slate-400 font-medium">AJ Events Checkout</div>
               <div className="text-sm font-bold tracking-tight">Razorpay Secure Payment</div>
             </div>
           </div>
