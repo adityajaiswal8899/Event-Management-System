@@ -64,7 +64,7 @@ export const LoginPage = () => {
           <div className="grid grid-cols-3 gap-1.5">
             <button
               type="button"
-              onClick={() => handleQuickLogin('admin@eventsphere.com', 'Admin@123')}
+              onClick={() => handleQuickLogin('aditya@events.com', 'Aditya@123')}
               className="p-1.5 rounded-xl bg-white dark:bg-dark-500 border border-primary-200 dark:border-dark-400 text-[11px] font-bold text-slate-800 dark:text-slate-200 hover:border-primary-500 transition-all flex items-center justify-center gap-1"
             >
               <Shield className="w-3 h-3 text-purple-600" />
