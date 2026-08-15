@@ -1,0 +1,51 @@
+services:
+  - type: web
+    name: event-management-system-backend
+    runtime: python
+    repo: https://github.com/adityajaiswal8899/Event-Management-System
+    plan: free
+    region: oregon
+    rootDir: backend
+    healthCheckPath: /api/events/
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: python manage.py migrate --noinput && gunicorn config.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        sync: false
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: DB_ENGINE
+        value: django.db.backends.postgresql
+      - key: DB_NAME
+        fromDatabase:
+          name: event-management-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: event-management-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: event-management-db
+          property: password
+      - key: DB_HOST
+        fromDatabase:
+          name: event-management-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: event-management-db
+          property: port
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+
+databases:
+  - name: event-management-db
+    databaseName: eventsphere
+    user: eventsphere
+    plan: free
+    region: oregon
