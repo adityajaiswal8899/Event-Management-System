@@ -178,7 +178,7 @@ export const EventsPage = () => {
           <Sparkles className="w-3.5 h-3.5" />
           <span>All Events ({totalCount})</span>
         </button>
-        {categories.map((c) => (
+        {(Array.isArray(categories)?categories:[]).map((c) => (
           <button
             type="button"
             key={c.id}
@@ -260,7 +260,7 @@ export const EventsPage = () => {
               >
                 All Categories
               </button>
-              {categories.map((c) => (
+              {(Array.isArray(categories)?categories:[]).map((c) => (
                 <button
                   type="button"
                   key={c.id}
@@ -417,7 +417,7 @@ export const EventsPage = () => {
           ) : (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                {events.map((event) => (
+                {(Array.isArray(events)?events:[]).map((event) => (
                   <EventCard key={event.id} event={event} />
                 ))}
               </div>

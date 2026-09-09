@@ -180,7 +180,7 @@ export const HomePage = () => {
                   className="w-full bg-transparent text-xs sm:text-sm text-slate-900 dark:text-white focus:outline-none cursor-pointer"
                 >
                   <option value="" className="dark:bg-dark-600">All Categories</option>
-                  {categories.map((c) => (
+                  {(Array.isArray(categories)?categories:[]).map((c) => (
                     <option key={c.id} value={c.slug} className="dark:bg-dark-600">
                       {c.name}
                     </option>
@@ -314,7 +314,7 @@ export const HomePage = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredEvents.map((event) => (
+            {(Array.isArray(featuredEvents)?featuredEvents:[]).map((event) => (
               <EventCard key={event.id} event={event} />
             ))}
           </div>
@@ -350,7 +350,7 @@ export const HomePage = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {trendingEvents.slice(0, 6).map((event) => (
+            {(Array.isArray(trendingEvents)?trendingEvents:[]).slice(0, 6).map((event) => (
               <EventCard key={event.id} event={event} />
             ))}
           </div>
