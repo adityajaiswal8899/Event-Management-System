@@ -199,24 +199,11 @@ export const HomePage = () => {
             </form>
           </div>
 
-          {/* Quick Metrics Strip */}
-          <div className="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto text-center">
-            <div className="p-3 rounded-2xl bg-white/40 dark:bg-dark-500/40 backdrop-blur-sm border border-slate-200/50 dark:border-dark-400/50">
-              <div className="font-display font-extrabold text-2xl text-slate-900 dark:text-white">100K+</div>
-              <div className="text-xs text-slate-500">Tickets Issued</div>
-            </div>
-            <div className="p-3 rounded-2xl bg-white/40 dark:bg-dark-500/40 backdrop-blur-sm border border-slate-200/50 dark:border-dark-400/50">
-              <div className="font-display font-extrabold text-2xl text-primary-600 dark:text-primary-400">1,200+</div>
-              <div className="text-xs text-slate-500">Live Summits</div>
-            </div>
-            <div className="p-3 rounded-2xl bg-white/40 dark:bg-dark-500/40 backdrop-blur-sm border border-slate-200/50 dark:border-dark-400/50">
-              <div className="font-display font-extrabold text-2xl text-slate-900 dark:text-white">99.8%</div>
-              <div className="text-xs text-slate-500">Customer Satisfaction</div>
-            </div>
-            <div className="p-3 rounded-2xl bg-white/40 dark:bg-dark-500/40 backdrop-blur-sm border border-slate-200/50 dark:border-dark-400/50">
-              <div className="font-display font-extrabold text-2xl text-accent-600 dark:text-accent-400">0.2s</div>
-              <div className="text-xs text-slate-500">Gate Check-in Speed</div>
-            </div>
+          {/* Trust Strip - real values */}
+          <div className="pt-6 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-500">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200"><span className="w-2 h-2 rounded-full bg-emerald-500"></span> Secure Razorpay checkout</span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200">Instant QR tickets</span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200">Verified organizers</span>
           </div>
 
         </div>
