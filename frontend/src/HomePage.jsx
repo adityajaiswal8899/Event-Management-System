@@ -87,12 +87,12 @@ export const HomePage = () => {
   };
 
   return (
-    <div className="space-y-12 pb-12 overflow-hidden">
+    <div className="space-y-10 md:space-y-12 pb-10 overflow-x-hidden">
       
       {/* 1. HERO SECTION */}
-      <section className="relative flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <section className="relative flex items-center justify-center py-8 md:py-12 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
         {/* Ambient Glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-primary-500/20 via-indigo-500/20 to-accent-500/20 blur-[130px] -z-10 rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[600px] h-[350px] bg-gradient-to-tr from-primary-500/20 via-indigo-500/20 to-accent-500/20 blur-[130px] -z-10 rounded-full pointer-events-none" />
         <div className="absolute top-1/3 left-10 w-72 h-72 bg-primary-600/10 blur-[100px] -z-10 rounded-full" />
         
         <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
@@ -105,7 +105,7 @@ export const HomePage = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+          <h1 className="font-display font-extrabold text-[30px] sm:text-5xl lg:text-6xl tracking-tight text-slate-900 dark:text-white leading-[1.1]">
             Discover Events. <br />
             <span className="text-gradient">Create Experiences.</span>
           </h1>
