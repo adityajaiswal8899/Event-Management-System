@@ -229,21 +229,21 @@ export const HomePage = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {categories.map((cat) => {
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+          {(Array.isArray(categories)?categories:[]).map((cat) => {
             const IconComp = iconMap[cat.icon] || Calendar;
             return (
               <Link
                 key={cat.id}
                 to={`/events?category=${cat.slug}`}
-                className="group relative h-44 sm:h-48 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-end p-4 border border-slate-200/60 dark:border-dark-300/80"
+                className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-primary-500 transition-all duration-200 flex flex-col justify-end p-3 sm:p-4 border border-slate-200/60"
               >
                 {/* Background Image with Zoom */}
                 {cat.image_url ? (
                   <img
                     src={cat.image_url}
                     alt={cat.name}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-300 will-change-transform" loading="lazy"
                   />
                 ) : (
                   <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-indigo-800" />
