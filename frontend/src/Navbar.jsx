@@ -82,14 +82,15 @@ export const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Explore Events', path: '/events' },
+    { name: 'Categories', path: '/events' },
     { name: 'Verify Ticket', path: '/verify-ticket' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full glass-nav transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 w-full bg-white/90 dark:bg-dark-600/90 backdrop-blur-xl border-b border-slate-200/70 dark:border-dark-400/60 transition-colors duration-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
