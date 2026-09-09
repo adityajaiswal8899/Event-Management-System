@@ -6,9 +6,9 @@ services:
     plan: free
     region: oregon
     rootDir: backend
-    healthCheckPath: /api/events/
+    healthCheckPath: /api/health/
     buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
-    startCommand: python manage.py migrate --noinput && gunicorn config.wsgi:application
+    startCommand: gunicorn config.wsgi:application
     envVars:
       - key: SECRET_KEY
         sync: false

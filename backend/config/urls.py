@@ -2,9 +2,20 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+from django.db import connection
+
+def health_check(request):
+    try:
+        with connection.cursor() as c:
+            c.execute("SELECT 1")
+        return JsonResponse({"status": "ok", "db": "up"})
+    except Exception as e:
+        return JsonResponse({"status": "error", "db": str(e)}, status=500)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/health/', health_check, name='health-check'),
     
     # API endpoints
     path('api/auth/', include('apps.users.urls')),
