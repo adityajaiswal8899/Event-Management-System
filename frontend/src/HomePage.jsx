@@ -87,10 +87,10 @@ export const HomePage = () => {
   };
 
   return (
-    <div className="space-y-20 pb-20 overflow-hidden">
+    <div className="space-y-12 pb-12 overflow-hidden">
       
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[85vh] flex items-center justify-center pt-12 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         {/* Ambient Glows */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-primary-500/20 via-indigo-500/20 to-accent-500/20 blur-[130px] -z-10 rounded-full pointer-events-none" />
         <div className="absolute top-1/3 left-10 w-72 h-72 bg-primary-600/10 blur-[100px] -z-10 rounded-full" />
