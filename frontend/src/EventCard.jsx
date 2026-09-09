@@ -59,13 +59,13 @@ export const EventCard = ({ event, onWishlistChange }) => {
   };
 
   return (
-    <div className="group rounded-2xl glass-card overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-all duration-300">
+    <div className="group rounded-2xl glass-card overflow-hidden flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-200">
       {/* Banner Container */}
       <div className="relative h-52 w-full overflow-hidden bg-slate-200 dark:bg-dark-500">
         <img
           src={event.display_banner}
           alt={event.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-300 will-change-transform"
           loading="lazy"
         />
         
